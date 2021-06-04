@@ -1,0 +1,531 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    width: 70px;
+    height: 4px;
+    color: blue;
+    background-color: dodgerblue;
+}
+
+nav {
+    background-color: azure ;
+    width: 100%;
+    height: 100px;
+    position: fixed; 
+    opacity: .8;
+    overflow-x: hidden;
+    top: 20px; 
+    z-index: 1;  
+}
+
+nav img {
+    padding-left: 50px;
+    float: left;
+    height: 100px;
+    width: 200px;
+    /* opacity: .8; */
+}
+
+nav ul.icons {
+    padding-top: 10px;
+    margin-left: 300px;
+    list-style-type: none;
+    float: left;
+}
+nav ul.icons li {
+    float: left;
+    padding-right: 20px;
+    
+}
+nav ul.icons li i{
+    padding: 5px;
+    border: 1px solid black;
+    /* background-color: white; */
+    color: black;
+    border-radius: 100%;
+    font-size: 30px;
+}
+
+#iconHide {
+    display: none;
+}
+
+nav ul.navOptions {
+    vertical-align: middle;
+    /* background-color: black; */
+    padding-top: 20px;
+    margin-right: 10px;
+    float: right;
+    list-style-type: none;
+}
+
+nav ul.navOptions li {
+    float: left;
+}
+nav ul.navOptions li a{
+    color: black;
+    padding-right: 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a i:hover {
+    color: blue;
+}
+
+nav ul li a:hover {
+    color: Blue !important;
+}
+
+#firstDiv {
+    background-image: linear-gradient( 
+       45deg, rgba(
+        60, 60, 60, 0.62), rgba(
+          60, 60, 60, 0.58)),
+        url("Background_image_1.jpg");
+    width: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+}
+
+#firstDiv h1 {
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+#belowHeading {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#arrowfirst {
+    text-align: left;
+    float: left;
+    margin-left: 220px;
+    margin-right: 870px;
+    margin-top: 0;
+}
+
+#arrow {
+    /* width: 100%; */
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 0;
+}
+
+[id*="arrow"] i {
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+
+}
+
+#firstbutton {
+    /* align-self: center; */
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+    border-style: none;
+    font-size: 20px;
+    width: 180px;
+}
+
+#secondDiv {
+    text-align: center;
+}
+
+.heading {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+
+.grid-container1 {
+    margin-left: 300px;
+    margin-right:200px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.grid-item i {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.grid-item p {
+    margin-bottom: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+.grid-item:hover i {
+    color: dodgerblue;
+}
+
+.grid-item:hover h3 {
+    color: dodgerblue;
+}
+
+.grid-item:hover p {
+    margin-bottom: 0px;
+    padding:10px;
+    background-color: lightgrey;
+    color: black;
+    border: 2px solid dodgerblue;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.grid-item:hover .hide {
+    padding: 10px;
+    margin-top: 0;
+    background-color: lightgrey;
+    display: block;
+    border: 2px solid dodgerblue;
+    border-top: 0;
+    border-left: 0; 
+    color: dodgerblue;
+}
+
+.grid-item:hover p.hide i {
+    color: dodgerblue;
+    margin-left: 10px;
+    padding: 2px;
+    border: 2px solid dodgerblue;
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+
+
+#thirdDiv {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.grid-container2 {
+    margin-left: 100px;
+    margin-right:200px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gallery {
+    position: relative;
+    margin: 40px;
+    border: none;
+    float: left;
+    width: 300px;
+}
+
+
+div.gallery:hover {
+    border: 2px solid black;
+}
+
+div.gallery img {
+    width: 300px;
+    height: 350px;
+
+}
+div.gallery h1 {
+    position: absolute;
+    font-size: 180px;
+    color: blue;
+    opacity: .7;
+    top: 60px;
+}
+div.gallery  p {
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    background-color: white;
+    text-align: right;
+    opacity: .6;
+    font-size: 30px;
+    height: 40px;
+}
+
+div.desc {
+    padding: 15px 15px 15px 0;
+    text-align: left;
+}
+
+#fourthDiv {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(
+        to bottom, rgba(60, 60, 60, 1),
+        rgba(60, 60, 60, .5)
+        ), url('Background_image_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#fourthDiv p {
+    padding-top: 80px;
+    color: white;
+    font-size: 50px;
+}
+
+.grid-container3 {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-right: 20px;
+}
+
+.grid3Item {
+    margin: 20px;
+}
+.grid3Item i {
+    font-size: 50px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.grid3Item h3 {
+    font-size: 16px;
+    color: white;
+    margin-top: 40px;
+    /* text-align: center; */
+}
+
+.grid3Item p {
+    /* display: none; */
+    padding-top: 40px !important;
+    color: white;
+    text-align: center;
+    font-size: 15px !important;
+}
+
+
+.footer {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 100px;
+}
+
+.options ul {
+    padding-top: 30px;
+    padding-left: 200px;
+    list-style-type: none;
+}
+
+.options ul li {
+    color: white;
+    margin-right: 30px;
+    float: left;
+}
+
+.options ul li i{
+    color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+		/* display:none; */
+	}
+	
+    nav {
+        width: 100%;
+        height: 80px;
+    }
+
+    nav img {
+        padding-left: 0px;
+        height: 70px;
+        width: 120px;
+        margin-right: 0;
+        padding-right: 0;
+    }
+	
+    nav ul.icons {
+        margin: 0;
+        margin-left: 60px;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    nav ul.icons li {
+        padding-right: 5px;
+        
+    }
+    nav ul.icons li i{
+        padding: 5px;
+        border: 1px solid black;
+        /* background-color: white; */
+        color: black;
+        border-radius: 100%;
+        font-size: 20px;
+    }
+    nav ul.icons li i:hover {
+        color: blue;
+    }
+
+    nav ul.navOptions {
+        display: none;
+    }
+
+    #iconHide {
+        display: inline;
+        font-size: 30px;
+        /* float: right; */
+        margin: 0px 0 0 20px;
+        padding: 0px 0 0 50px;
+    }
+    #iconHide i{
+        margin-top: 20px;
+    }
+
+    #firstDiv {
+        height: 500px;
+    }
+    #firstDiv h1 {
+        padding-top: 130px;
+        font-size: 30px;
+    }
+    
+    #belowHeading {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    #arrowfirst {
+        margin-left: 20px;
+        margin-right: 300px;
+    }
+    
+    #arrow {
+        margin-left: 100px;
+        margin-right: 0;
+    }
+    
+    #firstbutton {
+        padding: 20px;
+        font-size: 8px;
+        width: 100px;
+    }
+
+    .grid-container1 {
+        margin-left: 0px;
+        margin-right: 0;
+        padding: 30px;
+        grid-template-columns: auto auto;
+    }
+    
+    .grid-item {
+        margin-right: 20px;
+    }
+    
+    .grid-item i {
+        color: black;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .grid-item p {
+        margin-bottom: 50px;
+    }
+
+    #thirdDiv .belowHeading {
+        padding: 0 30px;
+    }
+
+    .grid-container2 {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        grid-template-columns: auto;
+    }
+    
+    
+    #fourthDiv {
+        height: 700px;
+    }
+
+    #fourthDiv p {
+        font-size: 30px;
+        margin-top: 20;
+    }
+    .grid-container3 {
+        grid-template-columns: auto ;
+    }
+    
+    .grid3Item {
+        margin: 20px;
+    }
+    .grid3Item i {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .grid3Item h3 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding: 0px;
+    }
+    
+    .grid3Item p {
+        padding-top: 0px !important;
+        font-size: 14px !important;
+    }
+
+    .footer {
+        background-color: dodgerblue;
+        width: 100%;
+        height: 150px;
+    }
+    
+    .options ul {
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+    
+    .options ul li {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    
+}
